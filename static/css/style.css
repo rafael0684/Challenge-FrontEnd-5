@@ -1,0 +1,259 @@
+body a{
+        text-decoration: none;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url('../font/Julietta-Messie-Demo.otf');
+  }
+@font-face {
+    font-family: titleFont--sec;
+    src: url('../font/OstrichSans-Medium.otf');
+}
+:root{
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+
+.nav--topo{
+    display: inline;
+}
+.nav-logo{
+   
+    width: clamp(35px, 8vw, 70px);
+}
+.nav-creations{
+    
+    width: clamp(100px, 20vw, 140px);
+}
+.nav--barra_busca{
+    
+    min-width: 250px;
+    max-width: 500px;
+    margin-left: 2rem;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    border-style: none;
+    max-width: clamp(370px 250px 300px);
+    height: 40px;
+    background-image: url('/static/img/lupa-busca.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right;
+    background-position-x: calc(100% - 1em);
+    
+
+}
+
+.btn-login{
+    
+    border-radius: 2px;
+    border-color:#CA88A0 ;
+    color: #CA88A0;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+.btn-login:hover{
+    color: white;
+    background-color: #CA88A0;
+}
+.btn-secundario{
+   padding-left: 1em;
+   padding-right: 1em;
+   margin: 0;
+}
+
+.nav__lupa{
+    display: none;
+}
+
+
+.btn--principal{
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #CA88A0;
+}
+.btn--principal:hover{
+    
+        color: #CA88A0;
+        background-color: rgba(255, 255, 255, 0);
+        
+}
+
+
+
+.hero-image{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    background: url('/static/img/hero-background.jpg');
+    background-blend-mode: overlay, normal;
+    height: 352px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    background-color: #e2dbdbe0;
+    background-position: 70%;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    max-width: 1136px;
+    height: 170px;
+}
+.form{
+    width: 40vw;
+    min-width: 330px;
+}
+.form-contato{
+    width: 35vw;
+    min-width: 300px;
+}
+.bg-gray{
+    background-color:rgba(249, 228, 228, 0.222)
+}
+
+.produtos{
+    margin: auto;
+    overflow:auto;
+    padding-left: 0;
+    
+
+}
+.produto{
+    max-width: 206px;
+}
+.produto__imagem{
+    width: 174px;
+    height: 178px;
+    border-radius: 4px;
+
+}
+.produto__imagem--detalhes{
+    width: clamp(30%,50%,50%);
+    width:50%;
+    height: 50%;
+    border-radius: 4px;
+
+}
+
+
+.produto__descricao {
+    font-weight: 300;
+}
+.produto__card{
+    list-style: none;
+    
+}
+
+.produto__preco{
+    font-weight: 700;
+}
+.produto__link{
+    color:#B40947;
+    font-weight: 700;
+}
+.produto__link:hover{
+    color: #CA88A0;
+}
+
+
+
+
+
+
+.rodape{
+    background-color: #fef1f7;
+    padding: 2em;
+
+}
+
+.rodape-logo{
+    
+    width: 150px;
+}
+.rodape-links ul{
+    text-decoration: none;
+    padding: 0;
+}
+.rodape-links--link{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: medium;
+
+}
+.rodape-links--link:hover{
+    color: #A2A2A2;
+
+}
+
+.rodape-conteudo{
+    justify-content: space-evenly;
+}
+
+
+
+.form-floating{
+    color: #A2A2A2;
+}
+
+@media (max-width:767px){
+    .nav--barra_busca{
+        display: none;
+    }
+    .nav__lupa{
+        display: block;
+    }
+    .btn-login{
+        padding: 0 2em;
+    }
+    .rodape-conteudo-1{
+        text-align: center;
+        margin: 0;
+        justify-content: center!important;
+        flex-wrap: wrap;
+    }
+    .rodape{
+        flex-wrap: wrap;
+    }
+    .linha-produtos{
+        
+        margin: auto;
+        max-width: 98%!important;
+    }
+}
+
+@media (max-width: 404px) {
+
+    .rodape-conteudo{
+        gap:0;
+        flex-wrap: wrap;
+    }
+    
+    .rodape{
+        padding: 1em;
+    }
+    .rodape-links ul{
+        min-width: 310px;
+        text-align: center;
+        padding: 0;
+        
+    }
+    .produto__card--detalhes {
+        flex-wrap: wrap;
+    }
+    .produto__imagem--detalhes{
+        width:100vw;
+    }
+} 
