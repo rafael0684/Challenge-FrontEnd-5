@@ -4,11 +4,11 @@ body a{
 
 @font-face {
     font-family: titleFont;
-    src: url('../font/Julietta-Messie-Demo.otf');
+    src: url('Julietta-Messie-Demo.otf');
   }
 @font-face {
     font-family: titleFont--sec;
-    src: url('../font/OstrichSans-Medium.otf');
+    src: url('OstrichSans-Medium.otf');
 }
 :root{
     font-family: 'Raleway';
@@ -38,7 +38,7 @@ body a{
     border-style: none;
     max-width: clamp(370px 250px 300px);
     height: 40px;
-    background-image: url('/static/img/lupa-busca.png');
+    background-image: url('lupa-busca.png');
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: right;
@@ -91,7 +91,7 @@ body a{
     justify-content: flex-end;
     align-items: flex-start;
     
-    background: url('/static/img/hero-background.jpg');
+    background: url('hero-background.jpg');
     background-blend-mode: overlay, normal;
     height: 352px;
     background-repeat: no-repeat;
